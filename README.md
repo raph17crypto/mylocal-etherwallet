@@ -12,7 +12,7 @@ What is needed ?
  
  Let me explain each lines of my Dockerfile
  
-`
+```
 #let's begin with a fresh new Debian installation
 FROM debian:latest
 #That's me !
@@ -34,12 +34,17 @@ apt-utils \
 /html && chmod -R 555  /var/www/html && a2enmod ssl && a2ensite default-ssl
 
 
-CMD ["/usr/sbin/apache2ctl","-DFOREGROUND"]`
+CMD ["/usr/sbin/apache2ctl","-DFOREGROUND"]
+```
 
 In order to buid this docker image you need to type in your terminal (inside the directory where Dockerfile is)
-`docker build -t my-local-ether-wallet .`
+```
+docker build -t my-local-ether-wallet .
+```
 Then you can launch your fresh new myetherwallet image with
-`docker run -d -p 4443:443 my-local-ether-wallet`
+```
+docker run -d -p 4443:443 my-local-ether-wallet
+```
 
 Finally open your browser and go to : https://localhost:4443
 
