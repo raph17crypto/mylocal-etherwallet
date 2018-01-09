@@ -52,3 +52,10 @@ The SSL certificate used is self signed so you might encounter an error in your 
 Don't worry, this is safe.
 
 You can now use your own myetherwallet very quickly without any fear that it might be compromised
+
+
+Where can I download required Docker application ?
+Docker for Windows 10 Enterprise : https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe
+Docker for other (lower) Windows Version : https://download.docker.com/win/stable/DockerToolbox.exe
+Docker for Mac : https://download.docker.com/mac/stable/Docker.dmg
+Docker for Linux : Might well be included in your distro repositories
